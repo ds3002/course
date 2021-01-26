@@ -73,3 +73,15 @@ aws configure
 ```
 
 5. Paste in the keys as prompted. For region, enter `us-east-1` and for output enter `json`.
+
+## Run & Connect to a Database
+
+**MySQL**
+
+1. In another terminal prompt, run a MySQL database container:
+```
+docker run -d -e MYSQL_ROOT_HOST=% \
+  -e "MYSQL_ROOT_PASSWORD=<SET_SOME_PASSWORD_HERE>" \
+  --rm --name dbhost mysql/mysql-server:latest
+```
+2. From your `course` container environment, connect to and interact with the database
