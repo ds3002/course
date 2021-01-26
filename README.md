@@ -24,6 +24,7 @@ A few details to note:
 ## Updating Your Environment
 
 1. Stop the current version of the running container.
+
 a. View the currently running container:
 
     docker ps
