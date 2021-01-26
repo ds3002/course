@@ -8,7 +8,7 @@ ENV TZ=America/New_York
 RUN apt-get update
 RUN apt-get install -y python3 python3-dev python3-pip \
   git curl net-tools jq unzip dnsutils tzdata httpie \
-  htop mysql-client
+  htop iputils-ping mysql-client
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" \
   -o "awscliv2.zip" \
   && unzip awscliv2.zip \
