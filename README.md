@@ -27,11 +27,11 @@ A few details to note:
 
     a. View the currently running container:
 
-    docker ps
+        docker ps
 
     b. Get the first few characters of the ID and then stop it:
 
-    docker stop 01234
+        docker stop 01234
 
 2. Pull the latest version.
 3. Run the new version using the same `docker run -it` command.
