@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 LABEL maintainer="UVA Data Science <nem2p@virginia.edu>"
-LABEL org.opencontainers.image.source=https://github.com/nmagee/ds3002
+LABEL org.opencontainers.image.source=https://github.com/ds3002/course
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/New_York
@@ -17,4 +17,4 @@ RUN mkdir "/home/host"
 
 WORKDIR /root
 COPY ./ ./
-RUN python3 -m pip install -r requirements.txt && rm -rf requirements.txt
+RUN python3 -m pip install -r requirements.txt
