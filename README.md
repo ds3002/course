@@ -10,7 +10,7 @@ common set of tools, scripts, and datasets.
 
 ## Setting Up Your Environment
 
-1. [Install Docker](https://docs.docker.com/get-docker/]
+1. [Install Docker](https://docs.docker.com/get-docker/)
 2. Run this Container. A basic Docker command to bring up the course container is:
 
     docker run -it ghcr.io/ds3002/course:latest /bin/bash
