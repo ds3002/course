@@ -37,7 +37,9 @@ A few details to note:
 
 2. Pull the latest version.
 
-```docker pull ghcr.io/ds3002/course:latest```
+```
+docker pull ghcr.io/ds3002/course:latest
+```
 
 3. Run the new version using the same `docker run -it` command.
 
