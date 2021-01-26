@@ -24,11 +24,11 @@ A few details to note:
 ## Updating Your Environment
 
 1. Stop the current version of the running container.
-  a. View the currently running container:
+    a. View the currently running container:
 
     docker ps
 
-  b. Get the first few characters of the ID and then stop it:
+    b. Get the first few characters of the ID and then stop it:
 
     docker stop 01234
 
