@@ -57,3 +57,17 @@ docker run -it \
   ghcr.io/ds3002/course:latest \
   /bin/bash
 ```
+
+## Set up AWS CLI credentials
+
+If you have created your AWS account (or have one already), retrieve your
+access and secret access keys and configure them on your computer.
+
+1. Sign into AWS and visit https://console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials. If you are using an IAM account, see the "Security Credentials" settings for your user.
+2. Unfold the "Access Keys" portion of page.
+3. Select "Create New Access Key". A div will appear with your Access Key and your Secret Access Key. Record these someplace safe, such as Evernote or your password manager.
+4. Configure your `aws` command-line. (If you need to install the `awscli` see [this page](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).)
+
+    aws configure
+
+5. Paste in the keys as prompted. For region, enter `us-east-1` and for output enter `json`.
