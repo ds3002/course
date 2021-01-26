@@ -13,7 +13,9 @@ common set of tools, scripts, and datasets.
 1. [Install Docker](https://docs.docker.com/get-docker/)
 2. Run this Container. A basic Docker command to bring up the course container is:
 
-    docker run -it ghcr.io/ds3002/course:latest /bin/bash
+```
+docker run -it ghcr.io/ds3002/course:latest /bin/bash
+```
 
 A few details to note:
 - Docker is being run in interactive/tty mode `-it`.
@@ -34,6 +36,9 @@ A few details to note:
         docker stop 01234
 
 2. Pull the latest version.
+
+```docker pull ghcr.io/ds3002/course:latest```
+
 3. Run the new version using the same `docker run -it` command.
 
 ## Advanced Mappings
@@ -43,8 +48,10 @@ such as your `~/.aws`, `~/.ssh` or other project directories.
 Here is an example that maps two local folders from a workstation 
 to the running container:
 
-    docker run -it \
-      -v ~/.aws:/root/.aws \
-      -v ~/Development:/home/development \
-      ghcr.io/ds3002/course:latest \
-      /bin/bash
+```bash
+docker run -it \
+  -v ~/.aws:/root/.aws \
+  -v ~/Development:/home/development \
+  ghcr.io/ds3002/course:latest \
+  /bin/bash
+```
