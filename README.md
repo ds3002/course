@@ -4,9 +4,8 @@
 
 Welcome to DS3002 Data Science Systems!
 
-This repository manages your working environment during this course. All students
-will run this environment and do the bulk of your work here so that we all have a
-common set of tools, scripts, and datasets.
+This repository manages your working environment during this course. Some course material
+and tools will be distributed in this way so that we all have a common set of tools, scripts, and datasets.
 
 ## Setting Up Your Environment
 
