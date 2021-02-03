@@ -25,15 +25,11 @@ A few details to note:
 
 ## Updating Your Environment
 
-1. Stop the current version of the running container.
+1. Stop the current version of the running container. From within the container, exit/stop it:
 
-    a. View the currently running container:
-
-        docker ps
-
-    b. Get the first few characters of the ID and then stop it:
-
-        docker stop 01234
+```
+exit
+```
 
 2. Pull the latest version.
 
@@ -41,7 +37,7 @@ A few details to note:
 docker pull ghcr.io/ds3002/course:latest
 ```
 
-3. Run the new version using the same `docker run -it` command.
+3. Run the new version using the same `docker run -it` command as before.
 
 ## Advanced Mappings
 
