@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 LABEL maintainer="UVA Data Science <nem2p@virginia.edu>"
 LABEL org.opencontainers.image.source=https://github.com/ds3002/course
 
@@ -7,8 +7,10 @@ ENV TZ=America/New_York
 
 RUN apt-get update
 RUN apt-get install -y python3 python3-dev python3-pip \
-  git curl net-tools jq unzip dnsutils tzdata httpie \
-  htop iputils-ping mysql-client redis gsutil
+  git curl net-tools jq unzip dnsutils httpie tzdata \
+  htop iputils-ping mysql-client redis gsutil apt-transport-https \
+  ca-certificates gnupg gcc python-dev python-setuptools libffi-dev
+
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" \
   -o "awscliv2.zip" \
   && unzip awscliv2.zip \

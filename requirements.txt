@@ -1,3 +1,4 @@
 requests
 redis
 boto3
+gsutil
