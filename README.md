@@ -53,3 +53,30 @@ docker run -it \
   /bin/bash
 ```
 
+## Replicate this Environment
+
+If you would like to install the same tools on your local workstation, 
+here is a list of the software and packages included in this image:
+
+- python3
+- python3-pip
+- git 
+- curl 
+- jq 
+- zip 
+- unzip 
+- nano
+- dig
+- httpie
+- htop 
+- ping
+- mysql-client
+- AWS CLI v2 (found [here](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html))
+
+
+Using `pip install`:
+
+- requests
+- redis
+- boto3
+- gsutil
