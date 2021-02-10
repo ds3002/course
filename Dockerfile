@@ -11,6 +11,8 @@ RUN apt-get install -y python3 python3-dev python3-pip nano \
   htop iputils-ping mysql-client redis gsutil apt-transport-https \
   ca-certificates gnupg gcc python-dev python-setuptools libffi-dev
 
+RUN python3 -m pip install --upgrade pip
+
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" \
   -o "awscliv2.zip" \
   && unzip awscliv2.zip \
