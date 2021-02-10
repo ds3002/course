@@ -5,9 +5,9 @@ LABEL org.opencontainers.image.source=https://github.com/ds3002/course
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/New_York
 
-RUN apt-get update
+RUN apt-get update && apt-get upgrade
 RUN apt-get install -y python3 python3-dev python3-pip nano \
-  git curl net-tools jq zip unzip dnsutils httpie tzdata \
+  git curl net-tools jq zip unzip dnsutils httpie tzdata wget \
   htop iputils-ping mysql-client redis gsutil apt-transport-https \
   ca-certificates gnupg gcc python-dev python-setuptools libffi-dev
 

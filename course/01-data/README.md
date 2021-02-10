@@ -104,3 +104,7 @@ INSERT INTO mock_data_tbl (id, first_name, last_name, email, ip_address, dob) VA
 INSERT INTO mock_data_tbl (id, first_name, last_name, email, ip_address, dob) VALUES (3, 'Charmain', 'Halden', 'chalden2@europa.eu', '170.112.37.136', '03/03/1982');
 INSERT INTO mock_data_tbl (id, first_name, last_name, email, ip_address, dob) VALUES (4, 'Allissa', 'Wakefield', 'awakefield3@usgs.gov', '23.46.25.161', '10/05/1988');
 ```
+
+## Using Python to Parse JSON
+
+Try the notebook based [Kaggle Lab](https://www.kaggle.com/nealmagee/parsing-json).
