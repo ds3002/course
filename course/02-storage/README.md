@@ -44,7 +44,6 @@ The AWS account you enter in these steps must have at least read permissions to 
 
 # Access S3 using the AWS CLI
 
-- - -
 ## `aws s3 ls` - List Buckets
 ```
 aws s3 ls
@@ -55,21 +54,18 @@ aws s3 ls
 2018-06-28 09:19:29 my-other-bucket
 ```
 
-- - -
 ## `aws s3 mb` - Make a new bucket
 ```
 aws s3 mb s3://mybucket3
 ```
 Remember that S3 bucket names must be globally unique from all other AWS customers.
 
-- - -
 ### `aws s3 rm` - Remove a bucket
 ```
 aws s3 rm s3://mybucket3
 ```
 Remember that S3 buckets must be emptied of all contents before they can be removed. Once removed the bucket name is available for other users.
 
-- - -
 ## `aws s3 ls` - List the contents of a bucket
 ```
 aws s3 ls s3://mybucket1/
@@ -89,13 +85,11 @@ using no unusual characters. The typical form of grouping objects under "subfold
 The value (contents) of that key are the actual contents of the file itself. But it is important to remember that folders as they appear in the path of
 an S3 object are simply a mental convenience.
 
-- - -
 ## `aws s3 cp` - Download a file
 ```
 aws s3 cp s3://mybucket1/robots.txt ./
 ```
 
-- - -
 ## `aws s3 cp` - Upload a file
 ```
 aws s3 cp local-file.txt s3://mybucket1/
@@ -106,7 +100,6 @@ To upload a file and make it publicly available via HTTPS, add an `acl` property
 aws s3 cp --acl public-read local-file.txt s3://mybucket1/
 ```
 
-- - -
 ## `aws s3 sync` - Synchronize to/from an S3 bucket
 ```
 aws s3 sync ./local-dir s3://mybucket1/remote-dir/
@@ -117,19 +110,16 @@ You can synchronize between any source/destination so long as at least one of th
 2. Sync from S3 to local workstation
 3. Sync from S3 bucket to another S3 bucket
 
-- - -
 ## `aws s3 rm` - Remove a file from S3
 ```
 aws s3 rm s3://mybucket1/file-not-wanted.pdf
 ```
 
-- - -
 ## `aws s3 mv` - Move a file within S3
 ```
 aws s3 mv s3://mybucket1/original-file.csv s3://mybucket1/moved-file.csv
 ```
 
-- - -
 ## `aws s3 presign` - Presign an S3 URL
 
 In some cases users want to share a file with a remote party without creating access keys or for a limited amount of time. The `presign` feature
@@ -144,7 +134,6 @@ https://mybucket1.s3.amazonaws.com/path/file-to-share.tar.gz?AWSAccessKeyId=AKIC
 
 ```
 
-- - -
 
 # Access S3 using `boto3` in Python
 
@@ -172,17 +161,14 @@ import boto3
 s3 = boto3.client('s3')
 ```
 
-- - -
 ## Upload a file to S3
 
-{% gist c2be9caa4479bb11bb1b6097d7269946 %}
+<script src="https://gist.github.com/nmagee/c2be9caa4479bb11bb1b6097d7269946.js"></script>
 
-- - -
 ## Download a file from S3
 
-{% gist a8b42a126235a0366f7472efd4965d18 %}
+<script src="https://gist.github.com/nmagee/a8b42a126235a0366f7472efd4965d18.js"></script>
 
-- - -
 ## More Information about `boto3`
 
 Documentation is available [**here**](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).

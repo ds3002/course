@@ -1,5 +1,0 @@
-# Scripts
-
-## bash
-
-## Python3
