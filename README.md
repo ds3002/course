@@ -11,6 +11,7 @@ and tools will be distributed in this way so that we all have a common set of to
 
 1. [Install Docker](https://docs.docker.com/get-docker/)
 2. Run this Container. A basic Docker command to bring up the course container is:
+3. Follow [these instructions](EXERCISES.md) for suggested practice.
 
 ```
 docker run -it ghcr.io/ds3002/course:latest /bin/bash
