@@ -126,7 +126,8 @@ terms of libraries, classes, functions, etc. A few things to note:
 - Whereas `bash` and other low-level tools (`grep`, `sed`, `awk`, `tr`, `perl`, etc.) can parse 
 plain-text "flat" files fairly efficiently, Python can ingest a data file and load it 
 into memory for much more complex transformations. A library like `pandas` can use 
-dataframes like a staging database for you to query, scan, count, etc.
+dataframes like a staging database for you to query, scan, count, etc. [Here's a great
+tutorial](https://www.kaggle.com/sohier/tutorial-accessing-data-with-pandas) on Kaggle.
 
 ## Hands-On Practice
 
