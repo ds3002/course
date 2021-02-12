@@ -1,4 +1,6 @@
-#!/usr/local/bin/bash
+#!/bin/bash
+
+set -e
 
 echo -n "Enter a number: "
 read VAR
@@ -8,4 +10,5 @@ then
   echo "That number is greater than 10."
 else
   echo "Your number is pretty small!"
+  exit 0;
 fi
