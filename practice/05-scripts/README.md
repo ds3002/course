@@ -123,9 +123,10 @@ terms of libraries, classes, functions, etc. A few things to note:
 [Refer to this](https://stackabuse.com/command-line-arguments-in-python/) for a basic tutorial.
 - Python can invoke shell scripts in other languages.
 - Python has many better options for conditional logic, error handling, and logging.
-- Whereas `bash` and other low-level shells can parse plain-text "flat" files fairly efficiently,
-Python can ingest a data file and load it into memory for much more complex transformations. A
-library like `pandas` can use dataframes like a staging database for you to query, scan, count, etc.
+- Whereas `bash` and other low-level tools (`grep`, `sed`, `awk`, `tr`, `perl`, etc.) can parse 
+plain-text "flat" files fairly efficiently, Python can ingest a data file and load it 
+into memory for much more complex transformations. A library like `pandas` can use 
+dataframes like a staging database for you to query, scan, count, etc.
 
 ## Hands-On Practice
 
