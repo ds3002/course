@@ -5,7 +5,7 @@
 # https://api.github.com/repos/nmagee/ds3002/branches
 
 # Using curl:
-curl -X GET https://api.github.com/repos/nmagee/ds3002/branches
+/usr/bin/curl -X GET https://api.github.com/repos/nmagee/ds3002/branches
 
 # Using httpie:
 http --body https://api.github.com/repos/nmagee/ds3002/branches
