@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# In order to get/fetch a remote HTTP resource, use the `curl`, `wget` or `httpie` tools:
+# In order to get/fetch a remote HTTP resource, use the `curl` or `httpie`:
 # Sample URL:
 # https://api.github.com/repos/nmagee/ds3002/branches
 
 # Using curl:
 curl -X GET https://api.github.com/repos/nmagee/ds3002/branches
-
-# Using wget:
-wget https://api.github.com/repos/nmagee/ds3002/branches
 
 # Using httpie:
 http --body https://api.github.com/repos/nmagee/ds3002/branches

@@ -6,35 +6,10 @@ import os
 
 ## Setup
 ##
-## 1. Go to https://github.com/settings/tokens and generate a new token.
-##    Grant it ALL permissions to the "repo" and "gist" sections.
-##    Do NOT ever commit this token to code you push back to Github.
-##    Do NOT ever share this token with another person.
+## https://github.com/settings/tokens and generate a new token.
+## GITHUB_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ##
-## 2. Copy the token and in your bash shell save it as an env variable (no spaces):
-##    GITHUB_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-##
-
-## Now we'll use the Github token to authenticate you to and create a
-## simple gist.
 
 token = os.getenv('GITHUB_TOKEN')
 
 url = "https://api.github.com/gists"
-data = {
-    "public": True,
-    "files": {
-        "ds3002.py": {
-            "content": "'Hello':'World'"
-        },
-    }
-}
-headers = {'Authorization': f'token {token}'}
-r = requests.post(url, headers=headers, data=json.dumps(data))
-# print(r.json())
-
-## Visit this URL and you can see your new gist:
-print("Your new gist has been created: ")
-d = r.json()
-link = d['html_url']
-print(link)
