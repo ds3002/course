@@ -10,7 +10,6 @@
 # Using httpie:
 http --body https://api.github.com/repos/nmagee/ds3002/branches
 
-
 # ---------------------------------------------------------------------------------------
 # Now you're receiving JSON! Use jq to parse/filter it:
 
