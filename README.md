@@ -41,6 +41,36 @@ docker pull ghcr.io/ds3002/course:latest
 
 3. Run the new version using the same `docker run -it` command as before.
 
+## Run the Container with Persistent Storage
+
+In order to save your own work from week to week, you can run this container
+in such a way that it does not delete your code every time you exit the container.
+
+To set up your container, follow these instructions:
+
+1. Clone this repository.
+```bash
+git clone https://github.com/ds3002/course.git
+```
+2. Change into the `course/practice` directory and issue a `pwd` (or determine the full path somehow).
+3. Pull the latest version of the `course` container:
+```bash
+docker pull ghcr.io/ds3002/course:latest
+```
+4. Now, run the container with an attached volume, mapped to the git repository above. Be sure
+to customize line 3 below with the path to the practice folder of *your* local copy of the source code.
+```bash
+docker run -it \
+  -v /Users/nem2p/sandbox/course/practice:/root/practice \
+  ghcr.io/ds3002/course:latest \
+  /bin/bash
+```
+5. You will be dropped into the container, where you can cd into `practice` and see course material. This gives
+you the ability to execute your code from within the container.
+6. At the same time, you can also open up the scripts and data files from *outside* the container using
+Windows Explorer, the Finder, or any IDE you like to use for coding.
+
+
 ## Advanced Mappings
 
 It may be useful to map additional directories to your container, 
