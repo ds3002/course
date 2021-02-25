@@ -25,7 +25,7 @@ data = {
     "public": True,
     "files": {
         "ds3002.py": {
-            "content": "'Hello':'World'"
+            "content": "#!/bin/bash \n\nFOO='bar';\n\necho $FOO;"
         },
     }
 }

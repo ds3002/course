@@ -46,7 +46,7 @@ docker pull ghcr.io/ds3002/course:latest
 In order to save your own work from week to week, you can run this container
 in such a way that it does not delete your code every time you exit the container.
 
-To set up your container, follow these instructions:
+### Set Up
 
 1. Clone this repository.
 ```bash
@@ -69,6 +69,19 @@ docker run -it \
 you the ability to execute your code from within the container.
 6. At the same time, you can also open up the scripts and data files from *outside* the container using
 Windows Explorer, the Finder, or any IDE you like to use for coding.
+
+### Updates
+
+To update your code repository, change to the base directory for `course` and issue this command:
+```
+git pull origin main
+```
+
+To update your course container, stop the current running one by exiting it. Then issue this command:
+```
+docker pull ghcr.io/ds3002/course:latest
+```
+Start your container again using the `docker run` command from above and you're all set!
 
 
 ## Advanced Mappings
