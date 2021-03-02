@@ -7,3 +7,4 @@ Click into a section to get practice with a tool or concept:
 - [Cleaning / Converting Data](practice/03-cleaning/README.md)
 - [Working with Remote Data](practice/04-remote/README.md)
 - [Scripting with bash and Python3](practice/05-scripts/README.md)
+- [Consuming Public and Private APIs](practice/06-api-consume/README.md)

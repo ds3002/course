@@ -2,3 +2,7 @@ requests==2.24.0
 redis
 boto3
 gsutil
+uvicorn
+fastapi
+typing
+pydantic

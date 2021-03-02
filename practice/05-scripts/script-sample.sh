@@ -6,11 +6,9 @@
 6. logging
 7. comments!
 
-
 # Input file: mock_data.tsv
 #
 # Command: tr '\t' ',' < file.tsv > file.csv
-
 
 # If/Else
 echo -n "Enter a number: "
