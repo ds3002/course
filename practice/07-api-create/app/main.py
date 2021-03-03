@@ -18,7 +18,7 @@ class Item(BaseModel):
 
 @app.get("/")  # zone apex
 def read_root():
-    return {"Hello": "Neal"}
+    return {"Hello": "Neal Magee"}
 
 # Adds two integers as PATH parameters
 @app.get("/add/{number_1}/{number_2}")

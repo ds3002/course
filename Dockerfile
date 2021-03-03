@@ -24,5 +24,5 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" \
 RUN mkdir "/home/host"
 
 WORKDIR /root
-COPY ./ ./
+COPY requirements.txt requirements.txt
 RUN python3 -m pip install -r requirements.txt
