@@ -11,6 +11,6 @@ PASS = os.environ.get('RDS_PASS')
 db=MySQLdb.connect(host=HOST,user=USER,passwd=PASS,db="ds3002")
 
 c=db.cursor()
-c.execute("""SELECT * FROM MOCK_DATA LIMIT 100""")
+c.execute("""SELECT id,email,ip_address FROM MOCK_DATA LIMIT 5""")
 results = c.fetchall()
 print(results)

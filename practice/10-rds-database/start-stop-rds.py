@@ -3,7 +3,6 @@
 import boto3
 
 # Flips the state of your RDS instance: Start/Stop
-
 instance = "ds3002-rds"
 
 rds = boto3.client("rds")
