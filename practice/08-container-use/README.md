@@ -15,6 +15,18 @@ To view all the containers you have pulled to your computer,
 docker images
 ```
 
+To delete an image, use the `rmi` remove image command with either the container name:tag or ID.
+
+```
+docker rmi image_name
+```
+
+To delete all unused images:
+
+```
+docker system prune
+```
+
 ## Running in Detached Mode
 
 To run a container in detached mode, append the `-d` flag to the `docker run` command with the
