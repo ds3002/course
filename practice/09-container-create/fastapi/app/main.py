@@ -17,7 +17,7 @@ class Item(BaseModel):
 
 @app.get("/")  # zone apex
 def read_root():
-    return {"Hello": "Main PY File"}
+    return {"Hello": "Inside of VS Code"}
 
 @app.get("/add/{number_1}/{number_2}")
 def add_me(number_1: int, number_2: int):

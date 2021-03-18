@@ -6,3 +6,4 @@ uvicorn
 fastapi
 typing
 pydantic
+mysqlclient
