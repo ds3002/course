@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.source=https://github.com/ds3002/course
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=America/New_York
 
- RUN apt-get update
+RUN apt-get update
 RUN apt-get install -y software-properties-common && add-apt-repository -y ppa:deadsnakes/ppa
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3.8 python3.8-dev python3-pip nano \
