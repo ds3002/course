@@ -21,4 +21,4 @@ You will be prompted to enter your password once you press return.
 ## Connection Issues
 
 If you cannot connect to your RDS instance, check to make sure your local IP address is allowed to make
-a connection over port 3306 in your RDS security group. Use [ifconfig.me](http://ifconfig.me/) to get your IP.
+a connection over port 3306 in your [RDS security group](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#SecurityGroups:). Use [ifconfig.me](http://ifconfig.me/) to get your IP.
