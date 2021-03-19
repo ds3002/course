@@ -2,11 +2,11 @@
 
 ## Assignment
 
--[ ] Create an RDS of your own following instructions from the lecture.
--[ ] Connect to your RDS instnce using either the `mysql` command-line (in the course container), or [MySQL WorkBench](https://dev.mysql.com/downloads/workbench/), [PHPMyAdmin](https://phpmyadmin.uvadcos.io/), or other tools.
--[ ] Create a database in your RDS instance.
--[ ] Manually create a table within that database using a schema that matches the `MOCK_DATA` table from the lecture. Be sure to set a primary key.
--[ ] Import [`mock_data.sql`](mock_data.sql) into your table.
+- [] Create an RDS of your own following instructions from the lecture.
+- [] Connect to your RDS instnce using either the `mysql` command-line (in the course container), or [MySQL WorkBench](https://dev.mysql.com/downloads/workbench/), [PHPMyAdmin](https://phpmyadmin.uvadcos.io/), or other tools.
+- [] Create a database in your RDS instance.
+- [] Manually create a table within that database using a schema that matches the `MOCK_DATA` table from the lecture. Be sure to set a primary key.
+- [] Import [`mock_data.sql`](mock_data.sql) into your table.
 
 ## `mysql` CLI Reference
 
