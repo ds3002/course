@@ -7,4 +7,3 @@ fastapi
 typing
 pydantic
 mysqlclient
-peewee
