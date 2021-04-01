@@ -1,1 +1,7 @@
 image: ghcr.io/ds3002/course:latest
+
+tasks:
+  - init: Add upstream
+    command: git remote add upstream https://github.com/ds3002/course.git
+  - init: Sync with upstream
+    command: git fetch upstream && git merge upstream/main main
