@@ -11,10 +11,10 @@ and tools will be distributed in this way so that we all have a common set of to
 
 You have FOUR choices for setting up an environment for this course:
 
-1. Old School - clone the repository for code/samples/data files, but install packages yourself. Detailed lists of packages and software are below.
-2. DevOps Hardcore - clone the repository, pull the Docker image, and run them together by mapping the repo to the container when you run it. Instructions [here](#running-as-a-docker-container).
-3. Cool Kids - use VS Code, and run the course container in the terminal. Instructions [here](https://www.youtube.com/watch?v=cRmChRzq6VE).
-4. 100% Webby - use Gitpod for a complete web-based experience. Requires no software other than a browser. Instructions [here](#gitpod).
+1. **Old School** - clone the repository for code/samples/data files, but install packages yourself. Detailed lists of packages and software are below.
+2. **DevOps Hardcore** - clone the repository, pull the Docker image, and run them together by mapping the repo to the container when you run it. Instructions [here](#running-as-a-docker-container).
+3. **Cool Kids** - use VS Code, and run the course container in the terminal. Instructions [here](https://www.youtube.com/watch?v=cRmChRzq6VE).
+4. **100% Webby** - use Gitpod for a complete web-based experience. Requires no software other than a browser. Instructions [here](#gitpod).
 
 ### Running as a Docker container
 
