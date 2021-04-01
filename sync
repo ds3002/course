@@ -1,0 +1,10 @@
+#!/bin/bash
+
+state=`git remote -v | grep upstream | wc -l`
+if [ "$state" -lt 1 ]
+then
+    echo "Adding upstream connection"
+    git remote add upstream https://github.com/ds3002/course.git
+fi
+
+git fetch upstream && git merge upstream/main main
