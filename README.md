@@ -140,12 +140,12 @@ To work with the course material in 100% web-based mode, try Gitpod! Follow thes
 ```
 https://gitpod.io/# <-- paste your URL after the # before you press return.
 ```
-5. This will open up YOUR repository within Gitpod. This includes a terminal with the course container, and a folder tree of all course content.
-6. In the terminal, enter this line:
+5. This will open up YOUR repository within Gitpod. Sign into Gitpod using your Github account. After a few minutes of loading, your session will include a terminal with the course container and a folder tree of all course content.
+6. In the terminal portion of the Gitpod window, enter this line:
 ```
 git remote add upstream https://github.com/ds3002/course.git
 ```
-7. You have now attached your repository to the main repositor for the course.
+7. You have now attached your forked repository to the main repository for the course.
 
 ## Update your fork
 
