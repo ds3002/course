@@ -160,6 +160,8 @@ git remote add upstream https://github.com/ds3002/course.git
 
 ## Update your fork
 
+To stay current with new releases into the course repository, follow these two simple steps:
+
 1. Fetch from the upstream branch:
 ```
 git fetch upstream
