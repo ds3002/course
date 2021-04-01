@@ -1,4 +1,1 @@
 image: ghcr.io/ds3002/course:latest
-
-tasks:
-  - init: pip install -r ./requirements.txt
