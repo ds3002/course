@@ -4,7 +4,7 @@ boto3
 gsutil
 uvicorn
 fastapi
-typing
 pydantic
+typing
 mysqlclient
 pipenv
