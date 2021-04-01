@@ -1,5 +1,3 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#)
-
 ![Docker Build CI](https://github.com/ds3002/course/workflows/Docker%20Build%20CI/badge.svg)
 
 # ds3002
@@ -126,3 +124,36 @@ Using `pip install`:
 - redis
 - boto3
 - gsutil
+
+# Gitpod
+
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#)
+
+## Setup
+
+To work with the course material in 100% web-based mode, try Gitpod! Follow these steps:
+
+1. Go to the course repository in Github.
+2. Click on the FORK icon in the upper-right corner. Fork the repository into your personal account.
+3. Go to your new fork of the repository in Github (a web page). Copy that URL.
+4. Open up a new tab to Gitpod.io but paste your fork URL directly after the `#` character:
+```
+https://gitpod.io/# <-- paste your URL after the # before you press return.
+```
+5. This will open up YOUR repository within Gitpod. This includes a terminal with the course container, and a folder tree of all course content.
+6. In the terminal, enter this line:
+```
+git remote add upstream https://github.com/ds3002/course.git
+```
+7. You have now attached your repository to the main repositor for the course.
+
+## Update your fork
+
+1. Fetch from the upstream branch:
+```
+git fetch upstream
+```
+2. Merge your branch with the upstream branch.
+```
+git merge upstream/main main
+```
