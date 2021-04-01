@@ -2,3 +2,7 @@ image: ghcr.io/ds3002/course:latest
 
 tasks:
   - command: ./workspace/course/catch-up
+
+github:
+  prebuilds:
+    main: true
