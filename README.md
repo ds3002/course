@@ -9,12 +9,23 @@ and tools will be distributed in this way so that we all have a common set of to
 
 ## Setting Up Your Environment
 
+You have FOUR choices for setting up an environment for this course:
+
+1. Old School - clone the repository for code/samples/data files, but install packages yourself. Detailed lists of packages and software are below.
+2. DevOps Hardcore - clone the repository, pull the Docker image, and run them together by mapping the repo to the container when you run it. Instructions [here](#running-as-a-docker-container).
+3. Cool Kids - use VS Code, and run the course container in the terminal. Instructions [here](https://www.youtube.com/watch?v=cRmChRzq6VE).
+4. 100% Webby - use Gitpod for a complete web-based experience. Requires no software other than a browser. Instructions [here](#gitpod).
+
+### Running as a Docker container
+
 1. [Install Docker](https://docs.docker.com/get-docker/)
-2. Run this Container. A basic Docker command to bring up the course container is:
+2. Run this Container. A basic Docker command to bring up the course container is below.
 3. Follow [these instructions](EXERCISES.md) for suggested practice.
 
 ```
-docker run -it ghcr.io/ds3002/course:latest /bin/bash
+git clone https://github.com/ds3002/course.git
+cd course
+docker run -it -v ${pwd}:/workspace/course ghcr.io/ds3002/course:latest /bin/bash
 ```
 
 A few details to note:
@@ -23,7 +34,7 @@ A few details to note:
 - Interactive mode requires that you designate an application or shell `/bin/bash`.
 - More advanced settings, such as volume mapping, are detailed below.
 
-## Updating Your Environment
+### Keeping Up to data
 
 1. Stop the current version of the running container. From within the container, exit/stop it:
 
@@ -157,3 +168,4 @@ git fetch upstream
 ```
 git merge upstream/main main
 ```
+
