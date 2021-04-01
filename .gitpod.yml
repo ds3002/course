@@ -1,5 +1,4 @@
 image: ghcr.io/ds3002/course:latest
 
 tasks:
-  - init: git remote add upstream https://github.com/ds3002/course.git
-  - command: git fetch upstream && git merge upstream/main main
+  - command: ./workspace/course/catch-up
