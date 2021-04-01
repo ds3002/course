@@ -8,7 +8,6 @@ Projects
 2. ETL Data Processor
 3. Discord Integration
 
-- - - - -
 
 ## API Chatbot
 
@@ -30,7 +29,6 @@ You may borrow/adapt code distributed in class earlier this semester!
 
 In addition to the container image and/or API, you should turn in the URL to a Github repository for your project.
 
-- - - - -
 
 ## ETL Data Processor
 
@@ -51,7 +49,6 @@ You may borrow/adapt code distributed in class earlier this semester!
 
 In addition to the container image, you should turn in the URL to a Github repository for your project.
 
-- - - - -
 
 ## Discord Integration
 
@@ -64,6 +61,33 @@ An advanced example: Users pass the URL of an image to your application, which p
 BE CREATIVE!
 
 **Discord Integration** - see the `discord.py` file in this folder for programmatic help with your POST method to the Discord API. The webhook URL I am giving you publishes directly to the #bot channel of our server but is also considered sensitive and should NOT be distributed with the code of your application. So you will need a method for injecting some/all of that URL into your application at runtime, using an ENV variable, etc.
+
+```
+#!/usr/bin/env python3
+
+import json
+import requests
+
+# Set up your data payload. This is what is POSTed to the #bot channel. The content
+# may consist of plain text, markdown text, URLs, image links, etc. Feel free to test.
+# All parameters available to you in this method "Execute Webhook" can be found here: 
+# https://discord.com/developers/docs/resources/webhook#execute-webhook 
+
+data = { 
+    "content": "This **bot** means business!! https://i.imgur.com/AaWEBMY.jpg",
+    "username": "REPLACE_WITH_YOUR_ID",
+    "avatar_url": "REPLACE_WITH_CREATIVE_URL"
+}
+
+# The URL below should be treated like a password and NOT published in code. Consider
+# passing it into your app as an ENV variable.
+url = "https://discord.com/api/webhooks/xxxxx/yyyyy"
+
+response = requests.post(url, json = data)
+print(response)
+```
+Output to the Discord channel looks like this:
+![Discord channel POST](https://nmagee.github.io/ds3002/images/bot-sample-post.png)
 
 For your deliverable (i.e. the thing you are to turn in), I am looking for a container image (or, for more advanced students you may publish this as an API using either FastAPI or Chalice, etc.) and a set of instructions for how to use your tool. You should consider everything the user needs to know in order to run your container.
 
