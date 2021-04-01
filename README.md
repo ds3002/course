@@ -34,9 +34,9 @@ A few details to note:
 - Interactive mode requires that you designate an application or shell `/bin/bash`.
 - More advanced settings, such as volume mapping, are detailed below.
 
-### Keeping Up to data
+### Keeping Up to date
 
-1. Stop the current version of the running container. From within the container, exit/stop it:
+1. Stop the current version of your running container. To exit or stop the container, type:
 
 ```
 exit
