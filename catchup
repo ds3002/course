@@ -8,4 +8,5 @@ then
 fi
 
 git fetch upstream && git merge upstream/main main
-echo "Up to date!"
+clear
+echo "Sync with DS3002 repository complete."
