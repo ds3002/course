@@ -146,19 +146,15 @@ To work with the course material in 100% web-based mode, try Gitpod! Follow thes
 
 1. Go to the course repository in Github.
 2. Click on the FORK icon in the upper-right corner. Fork the repository into your personal account.
-3. Go to your new fork of the repository in Github (a web page). Copy that URL.
-4. Open up a new tab to Gitpod.io but paste your fork URL directly after the `#` character:
+3. Go to your new fork of the repository in Github (a web page).
+4. In your browser address bar, paste the snippet below BEFORE the URL to your forked repository.
 ```
-https://gitpod.io/# <-- paste your URL after the # before you press return.
+https://gitpod.io/#
 ```
 5. This will open up YOUR repository within Gitpod. Sign into Gitpod using your Github account. After a few minutes of loading, your session will include a terminal with the course container and a folder tree of all course content.
-6. In the terminal portion of the Gitpod window, enter this line:
-```
-git remote add upstream https://github.com/ds3002/course.git
-```
-7. You have now attached your forked repository to the main repository for the course.
+7. You now have a fork of the course repository that is linked to the main repository.
 
-## Update your fork
+## Updating your fork
 
 To stay current with new releases into the course repository, follow these two simple steps:
 
@@ -170,3 +166,14 @@ git fetch upstream
 ```
 git merge upstream/main main
 ```
+
+## Saving your changes
+
+If you generate code, scripts, data files, etc. that you would like to keep, simply add, commit, and push
+the files back to your fork of the repository:
+```
+git add .
+git commit -m "Some meaningful message"
+git push origin main
+```
+You will be prompted to sign into Github in order to push.
