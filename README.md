@@ -138,7 +138,7 @@ Using `pip install`:
 
 # Gitpod
 
-[![Gitpod open-in-gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#)
+[![Gitpod open-in-gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://handlers.uvasomrc.io/gitpod/)
 
 ## Setup
 
