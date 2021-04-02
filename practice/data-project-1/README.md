@@ -25,6 +25,10 @@ For your deliverable (i.e. the thing you are to turn in), I am looking for one o
 1. A container running Flask/FastAPI with your code, launched into AWS LightSail; or
 2. Python in a Chalice app that has been published to AWS (this is for more advanced students)
 
+Instructions for publishing a container to Lightsail:
+
+[![](http://img.youtube.com/vi/0vn93BtjtyU/0.jpg)](http://www.youtube.com/watch?v=0vn93BtjtyU "How To - Deploy a Container to Lightsail")
+
 You may borrow/adapt code distributed in class earlier this semester!
 
 In addition to the container image and/or API, you should turn in the URL to a Github repository for your project.
@@ -88,6 +92,10 @@ print(response)
 ```
 Output to the Discord channel looks like this:
 ![Discord channel POST](https://nmagee.github.io/ds3002/images/bot-sample-post.png)
+
+A walkthrough of this integration is available here:
+
+[![](http://img.youtube.com/vi/_qkZUFYkg2E/0.jpg)](http://www.youtube.com/watch?v=_qkZUFYkg2E "How To - Work with Discord Webhooks")
 
 For your deliverable (i.e. the thing you are to turn in), I am looking for a container image (or, for more advanced students you may publish this as an API using either FastAPI or Chalice, etc.) and a set of instructions for how to use your tool. You should consider everything the user needs to know in order to run your container.
 
