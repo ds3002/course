@@ -126,15 +126,22 @@ here is a list of the software and packages included in this image:
 - htop 
 - ping
 - mysql-client
+- mongodb-clients
 - AWS CLI v2 (found [here](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html))
 
 
 Using `pip install`:
 
-- requests
-- redis
-- boto3
-- gsutil
+requests
+redis
+boto3
+gsutil
+uvicorn
+fastapi
+pydantic
+typing
+mysqlclient
+pipenv
 
 # Gitpod
 
