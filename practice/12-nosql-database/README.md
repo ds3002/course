@@ -112,13 +112,90 @@ MongoDB Enterprise atlas-f0pmyi-shard-0:PRIMARY>
 
 ### Practice
 
-After watching the "Mongo in 30 minutes" video, try these exercises:
+After watching the [**Mongo in 30 minutes**](https://www.youtube.com/watch?v=pWbMrx5rVBE) video, try these exercises:
 
-1. sdf
-2. sdf
-3. sdf
-4. sdf
-5. sdf
+1. From within the Atlas Cloud console, load sample data using the `...` button in your cluster settings.
+![Add sample data to MongoDB](https://nmagee.github.io/ds3002/images/mongo-sample-data.png)
+2. Using your `mongo` shell, list your databases, select the `sample_weatherdata` set, then show collections within that:
+```
+show dbs;
+use sample_weatherdata;
+show collections;
+```
+3. This should show you there is a `data` collection within that database. Find all records in the collection, then display them using the `.pretty()` flag, and finally count them:
+```
+db.data.find();
+db.data.find().pretty();
+db.data.find().count();
+```
+4. Search for all records containing a `skyCondition.ceilingHeight.value` of `750` and count the results. Then display the results:
+```
+db.data.find({"skyCondition.ceilingHeight.value":750}).count();
+db.data.find({"skyCondition.ceilingHeight.value":750}).pretty();
+```
+5. Retrieve a single record based on `ObjectId`:
+```
+db.data.find(ObjectId("5553a998e4b02cf7151195d3")).pretty();
+```
+6. Finally, using the code below insert a new record:
+```
+{
+        "st" : "x+85600-124000",
+        "ts" : ISODate("1984-03-07T13:00:00Z"),
+        "position" : {
+                "type" : "Point",
+                "coordinates" : [
+                        -124,
+                        85.6
+                ]
+        },
+        "elevation" : 8787,
+        "callLetters" : "ROBZ",
+        "qualityControlProcess" : "V020",
+        "dataSource" : "3",
+        "type" : "FM-13",
+        "airTemperature" : {
+                "value" : -22.9,
+                "quality" : "1"
+        },
+        "dewPoint" : {
+                "value" : -24.9,
+                "quality" : "1"
+        },
+        "pressure" : {
+                "value" : 1000.2,
+                "quality" : "1"
+        },
+        "wind" : {
+                "direction" : {
+                        "angle" : 270,
+                        "quality" : "1"
+                },
+                "type" : "N",
+                "speed" : {
+                        "rate" : 7,
+                        "quality" : "1"
+                }
+        },
+        "visibility" : {
+                "distance" : {
+                        "value" : 7000,
+                        "quality" : "1"
+                },
+                "variability" : {
+                        "value" : "N",
+                        "quality" : "9"
+                }
+        },
+        "skyCondition" : {
+                "ceilingHeight" : {
+                        "value" : 760,
+                        "quality" : "1",
+                        "determination" : "C"
+                }
+        }
+}
+```
 
 ## DynamoDB
 
