@@ -245,7 +245,7 @@ The maximum value of the `value` half of a row in DynamoDB is 400KB, which is co
 ### Create a Table & Connect
 
 
-## Cloud Deployments
+## Managed NoSQL Services in the Cloud
 
 Versions/variations of these NoSQL solutions are available in each of the three major public clouds:
 
