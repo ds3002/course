@@ -112,7 +112,7 @@ placeholder text goes here.
 
 [**Learn more about DynamoDB**](https://aws.amazon.com/dynamodb/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sI-zciHAh-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Intro to AWS DynamoDB](http://img.youtube.com/vi/sI-zciHAh-4/0.jpg)](http://www.youtube.com/watch?v=sI-zciHAh-4 "AWS DynamoDB")
 
 ### Create a Table & Connect
 
