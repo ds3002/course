@@ -47,29 +47,42 @@ After watching the lecture video, try the following:
 
 1. List all keys:
 ```
-keys *
+KEYS *
 ```
+
 2. Insert 4 keys using the firstnames and lastnames of people as keys and values:
 ```
-set jim ryan
-set john jingle-jacob-heimer-schmidt
-set tina fey
-set leonardo davcinci
+SET jim ryan
+SET john jingle-jacob-heimer-schmidt
+SET tina fey
+SET leonardo davcinci
 ```
+
 3. Fetch some of those values using their keys:
 ```
-get jim
-get leonardo
-get tina
+GET jim
+GET leonardo
+GET tina
 ```
+
 4. Set 3 Key-Value pairs using integers as the value. Add expiration times in seconds:
 ```
-set counter1 10 EX 30 
-set counter2 472 EX 60 
-set counter3 984 EX 44 
+SET counter1 10 EX 30 
+SET counter2 472 EX 60 
+SET counter3 984 EX 44 
 ```
 Next retrieve these values by key, one by one. Repeat this process for the next minute or two. Can you continue to fetch these values?
-5. sdf
+
+5. Set up a counter and increment it. You can increment by any integer amount:
+```
+SET counter 1
+INCR counter 5
+INCR counter 5
+INCR counter 5
+GET counter
+```
+
+6. For more hands-on practice and advanced usage, try the [**try.redis.io Interactive Tutorial**](https://try.redis.io/).
 
 ## MongoDB
 
