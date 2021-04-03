@@ -64,7 +64,7 @@ in memory.
 This course will be using MongoDB Atlas for hands-on exercises. Follow the instructions in the How To video for setup. I recommend
 using a Google account when creating your [Atlas MongoDB Cluster](https://www.mongodb.com/cloud/atlas/register).
 
-![Create MongoDB Atlas Account](https://nmagee.github.io/ds3002/images/google-signup.png)
+[![Create MongoDB Atlas Account](https://nmagee.github.io/ds3002/images/google-signup.png)](https://account.mongodb.com/account/sso/google?signupSource=&referer=null)
 
 **Connect**
 
