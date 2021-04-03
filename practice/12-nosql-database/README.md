@@ -139,7 +139,7 @@ db.data.find(ObjectId("5553a998e4b02cf7151195d3")).pretty();
 ```
 6. Finally, using the code below insert a new record:
 ```
-{
+db.data.insertOne({
         "st" : "x+85600-124000",
         "ts" : ISODate("1984-03-07T13:00:00Z"),
         "position" : {
@@ -194,7 +194,7 @@ db.data.find(ObjectId("5553a998e4b02cf7151195d3")).pretty();
                         "determination" : "C"
                 }
         }
-}
+});
 ```
 
 ## DynamoDB
