@@ -242,8 +242,9 @@ The maximum value of the `value` half of a row in DynamoDB is 400KB, which is co
 
 [![Intro to AWS DynamoDB](http://img.youtube.com/vi/sI-zciHAh-4/0.jpg)](http://www.youtube.com/watch?v=sI-zciHAh-4 "AWS DynamoDB")
 
-### Create a Table & Connect
+### Hands-On Exercises
 
+Follow the [**Qwiklab: Amazon DynamoDB CRUD Activities Using the AWS CLI and SDK**](https://www.qwiklabs.com/focuses/15604?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=8646367) lab for hands-on exercises.
 
 ## Managed NoSQL Services in the Cloud
 
