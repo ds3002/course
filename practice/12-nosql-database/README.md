@@ -245,3 +245,12 @@ The maximum value of the `value` half of a row in DynamoDB is 400KB, which is co
 ### Create a Table & Connect
 
 
+## Cloud Deployments
+
+Versions/variations of these NoSQL solutions are available in each of the three major public clouds:
+
+| Cloud | Redis | MongoDB | DynamoDB |
+| --- | --- | -- | -- |
+| AWS | ElastiCache | DocumentDB, Atlas | DynamoDB |
+| Google | MemoryStore | Atlas | BigTable |
+| Azure | Azure Cache | Atlas | Cosmos |
