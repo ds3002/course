@@ -69,6 +69,7 @@ SET counter2 472 EX 60
 SET counter3 984 EX 44 
 ```
 Next retrieve these values by key, one by one. Repeat this process for the next minute or two. Can you continue to fetch these values?
+
 5. Set up a counter and increment it. You can increment by any integer amount:
 ```
 SET counter 1
