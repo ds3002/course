@@ -18,7 +18,14 @@ Think of Redis as an exceptionally fast, 2-column lookup table. It makes no use 
 Redis is "fast" despite its data storage capabilities being relatively large (the `value` half has a maximum capacity of 512MB),
 while the database engine attempts to keep frequently-access data in memory for optimal return to requests.
 
-[**Learn more about Redi**](https://redis.io/)
+Redis's strongest features for data science are:
+
+1. Incredibly simple to use.
+2. Stores large records.
+3. Returns results quickly.
+4. Useful for storing and retrieving lists, queues, tasks, items, orchestration, settings, etc.
+
+[**Learn more about Redis**](https://redis.io/)
 
 ### Run Redis & Connect
 
@@ -58,6 +65,13 @@ schema or structure.
 Mongo allows developers to search across documents for specific data elements in the JSON tree, to add arbitrary documents within
 the same collection, but a relatively small amount of data per document (16MB). This allows Mongo to keep frequently-accessed documents
 in memory.
+
+MongoDB's strongest features for data science are:
+
+1. Simple to use for storing varied datasets.
+2. Popularity in the community.
+3. Can be run locally, on a server, or in the cloud.
+4. Returns results quickly.
 
 [**Learn more about MongoDB**](https://www.mongodb.com/)
 
@@ -108,7 +122,16 @@ After watching the "Mongo in 30 minutes" video, try these exercises:
 
 ## DynamoDB
 
-placeholder text goes here.
+Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. It's a fully managed, multi-region, multi-active, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications. DynamoDB can handle more than 10 trillion requests per day and can support peaks of more than 20 million requests per second.
+
+DynamoDB's strongest features for data science are:
+
+1. It "just works."
+2. As a managed service there is nothing to provision or maintain.
+3. Regardless of user requests it remains fast.
+4. Scales to any load.
+
+The maximum value of the `value` half of a row in DynamoDB is 400KB, which is considerably smaller than Redis or MongoDB.
 
 [**Learn more about DynamoDB**](https://aws.amazon.com/dynamodb/)
 
