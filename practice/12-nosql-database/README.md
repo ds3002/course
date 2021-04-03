@@ -18,6 +18,8 @@ Think of Redis as an exceptionally fast, 2-column lookup table. It makes no use 
 Redis is "fast" despite its data storage capabilities being relatively large (the `value` half has a maximum capacity of 512MB),
 while the database engine attempts to keep frequently-access data in memory for optimal return to requests.
 
+[**Learn more about Redi**](https://redis.io/)
+
 ### Run Redis & Connect
 
 For practice you will run Redis in a container next to your course container, without storage, clustering, or any custom settings.
@@ -56,6 +58,8 @@ schema or structure.
 Mongo allows developers to search across documents for specific data elements in the JSON tree, to add arbitrary documents within
 the same collection, but a relatively small amount of data per document (16MB). This allows Mongo to keep frequently-accessed documents
 in memory.
+
+[**Learn more about MongoDB**](https://www.mongodb.com/)
 
 ### Run MongoDB & Connect
 
@@ -105,6 +109,10 @@ After watching the "Mongo in 30 minutes" video, try these exercises:
 ## DynamoDB
 
 placeholder text goes here.
+
+[**Learn more about DynamoDB**](https://aws.amazon.com/dynamodb/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sI-zciHAh-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Create a Table & Connect
 
