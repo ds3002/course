@@ -2,9 +2,9 @@
 
 We will touch three NoSQL database systems in this section of the course:
 
-1. [Redis](#redis) - an in-memory Key-Value database.
-2. [MongoDB](#mongodb) - a popular document database.
-3. [DynamoDB](#dynamodb) - Amazon's cloud-based NoSQL service that offers both key-value and document features.
+1. [**Redis**](#redis) - an in-memory Key-Value database.
+2. [**MongoDB**](#mongodb) - a popular document database.
+3. [**DynamoDB**](#dynamodb) - Amazon's cloud-based NoSQL service that offers both key-value and document features.
 
 ## Redis
 
@@ -61,24 +61,26 @@ in memory.
 
 **Setup**
 
-This course will be using MongoDB Atlas, a cloud-based Mongo service, for hands-on exercises. Follow the instructions in the How To video for setup. I recommend
-using a Google account when creating your [Atlas MongoDB Cluster](https://www.mongodb.com/cloud/atlas/register).
+This course will be using MongoDB Atlas, a cloud-based Mongo service, for hands-on exercises. Follow the instructions in the [**How To video**](https://www.youtube.com/watch?v=5-tIfDCb-T4) for setup. I recommend
+using a Google account when creating your [**Atlas MongoDB Cluster**](https://www.mongodb.com/cloud/atlas/register).
 
 [![Create MongoDB Atlas Account](https://nmagee.github.io/ds3002/images/google-signup.png)](https://account.mongodb.com/account/sso/google?signupSource=&referer=null)
 
 **Connect**
 
 The DS3002 course container contains the `mongo` shell application. From MongoDB Atlas, click on the CONNECT button of your cluster
-and select "Connect with the Mongo shell." This will give you a command something like this:
+and select "Connect with the Mongo shell." This will give you a connection string:
 
 ```
 mongo "mongodb+srv://cluster0.pguxs.mongodb.net/myFirstDatabase" --username <username>
 ```
 
+Customize the command slightly:
+
 - Remove `myFirstDatabase` from the connection string.
 - Replace `<username>` with the user you created.
 
-You will be prompted for your password and should end up with a prompt like this:
+You will be prompted for your password and should then gain a prompt:
 
 ```
 root@a18a980325ad:/workspaces/course# mongo "mongodb+srv://cluster0.pguxs.mongodb.net" --username mongo
