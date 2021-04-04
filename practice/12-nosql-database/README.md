@@ -49,14 +49,13 @@ After watching the lecture video, try the following:
 ```
 KEYS *
 ```
-2. Insert 4 keys using the firstnames and lastnames of people as keys and values:
+2. Insert some keys using the firstnames and lastnames of people as keys and values:
 ```
 SET jim ryan
-SET john jingle-jacob-heimer-schmidt
 SET tina fey
 SET leonardo davcinci
 ```
-3. Fetch some of those values using their keys:
+3. Fetch those values using their keys:
 ```
 GET jim
 GET leonardo
@@ -64,11 +63,11 @@ GET tina
 ```
 4. Set 3 Key-Value pairs using integers as the value. Add expiration times in seconds:
 ```
-SET counter1 10 EX 30 
-SET counter2 472 EX 60 
-SET counter3 984 EX 44 
+SET counter1 10 EX 10 
+SET counter2 472 EX 30 
+SET counter3 984 EX 28 
 ```
-Next retrieve these values by key, one by one. Repeat this process for the next minute or two. Can you continue to fetch these values?
+Next retrieve these values by key, one by one. Repeat this process for the next minute. Can you continue to fetch these values?
 
 5. Set up a counter and increment it. You can increment by any integer amount:
 ```
@@ -78,7 +77,12 @@ INCR counter 5
 INCR counter 5
 GET counter
 ```
-6. For more hands-on practice and advanced usage, try the [**try.redis.io Interactive Tutorial**](https://try.redis.io/).
+6. For more hands-on practice and advanced usage, try the [**try.redis.io Interactive Tutorial**](https://try.redis.io/). Pay particular
+attention to commands like:
+
+- MSET - setting multiple items
+- LPUSH / LSET / LRANGE / LREM / LPOP - create and manage lists
+- ZADD / ZRANGE / ZREM / ZCOUNT - create and manage sorted sets
 
 ## MongoDB
 
