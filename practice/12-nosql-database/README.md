@@ -225,6 +225,32 @@ db.data.insertOne({
 });
 ```
 
+### CRUD Operations
+
+**Create**
+```
+db.<db-name>.insertOne({...})
+db.<db-name>.insertMany({...})
+```
+
+**Read**
+```
+db.<db-name>.find({...})
+db.<db-name>.findOne({...})
+```
+
+**Update / Upsert**
+```
+db.<db-name>.update({{"<search-key>" : "<search-value>"},{$set : {"<key>": "<updated-value>"}}})
+db.<db-name>.updateOne({SingleKeyToUpdate},{Set Command})
+```
+
+**Delete**
+```
+db.<db-name>.deleteOne(<search-condition>)
+db.<db-name>.delete(<search-condition>)
+```
+
 ## DynamoDB
 
 Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. It's a fully managed, multi-region, multi-active, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications. DynamoDB can handle more than 10 trillion requests per day and can support peaks of more than 20 million requests per second.
