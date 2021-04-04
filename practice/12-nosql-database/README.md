@@ -80,9 +80,9 @@ GET counter
 6. For more hands-on practice and advanced usage, try the [**try.redis.io Interactive Tutorial**](https://try.redis.io/). Pay particular
 attention to commands like:
 
-- MSET - setting multiple items
-- LPUSH / LSET / LRANGE / LREM / LPOP - create and manage lists
-- ZADD / ZRANGE / ZREM / ZCOUNT - create and manage sorted sets
+- `MSET` / `MGET` - setting multiple items
+- `LPUSH` / `LSET` / `LRANGE` / `LREM` / `LPOP` - create and manage lists
+- `ZADD` / `ZRANGE` / `ZREM` / `ZCOUNT` - create and manage sorted sets
 
 ## MongoDB
 
