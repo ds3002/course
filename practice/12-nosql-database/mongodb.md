@@ -1,5 +1,11 @@
 # MongoDB Lab
 
+- [Run MongoDB & Connect](#run-mongodb-&-connect)
+- [Exercise 1](#exercise-1)
+- [Exercise 2](#exercise-2)
+- [Reference: CRUD Operations](#reference-crud-operations)
+- [Integrating with `python3`](#integrating-with-python3)
+
 ## Run MongoDB & Connect
 
 **Setup**
@@ -222,6 +228,6 @@ db.<db-name>.deleteOne(<search-condition>)
 db.<db-name>.delete(<search-condition>)
 ```
 
-## Next Step: Integrating with `python3`
+## Integrating with `python3`
 
 Try installing the `pymongo` library!
