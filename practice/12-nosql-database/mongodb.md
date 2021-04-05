@@ -1,6 +1,6 @@
 # MongoDB Lab
 
-- [Run MongoDB & Connect](#run-mongodb-&-connect)
+- [Run MongoDB & Connect](#run-mongodb--connect)
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
 - [Reference: CRUD Operations](#reference-crud-operations)
