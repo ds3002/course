@@ -41,6 +41,18 @@ to the Redis service from your course container using the `-h` flag to specify a
 redis-cli -h 172.17.0.1
 ```
 
+#### For Gitpod Users
+
+In Gitpod you can run the redis server directly within your container using a second terminal window. Follow these steps:
+1. Open your forked version of the `course` repository using Gitpod. [Instructions here](https://github.com/nmagee/course#gitpod).
+2. Go to the TERMINAL menu --> "New Terminal" to open a secondary terminal pane.
+3. In that terminal, start a Redis server:
+```
+redis-server
+```
+4. A prompt that "A service is available on port 6379" will appear. Ignore or close it.
+5. Return to your original terminal pane and you can now interact with Redis using the `redis-cli`.
+
 ### Practice
 
 After watching the lecture video, try the following:
@@ -176,3 +188,9 @@ Versions/variations of these NoSQL solutions are available in each of the three 
 | AWS | ElastiCache | DocumentDB, Atlas | DynamoDB |
 | Google | MemoryStore | Atlas | BigTable |
 | Azure | Azure Cache | Atlas | Cosmos |
+
+## Read More
+
+* [Ledger Databases](https://ivan.mw/2019-11-24/what-is-a-ledger-database)
+* [Graph Databases](https://neo4j.com/developer/graph-database/)
+* [Time Series Databases](https://aws.amazon.com/timestream/)
