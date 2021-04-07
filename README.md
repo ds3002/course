@@ -150,16 +150,14 @@ Using `pip install`:
 
 To work with the course material in 100% web-based mode, try Gitpod! Follow these steps:
 
-1. Go to the course repository in Github.
+1. Go to the course repository in Github. (Hint: You're there right now!)
 2. Click on the FORK icon in the upper-right corner. Fork the repository into your personal account.
 3. Go to your new fork of the repository in Github (a web page).
-4. In your browser address bar, paste the snippet below BEFORE the URL to your forked repository:
-```
-https://gitpod.io/#
-```
-(Or, from your repository page in Github, click on the blue button above.)
+4. Find the green "Gitpod" button in the upper-right corner of your new forked repository.
 5. This will open up YOUR repository within Gitpod. Sign into Gitpod using your Github account. After a few minutes of loading, your session will include a terminal with the course container and a folder tree of all course content.
 7. You now have a fork of the course repository that is linked to the main repository.
+
+[![Open in Gitpod](https://nmagee.github.io/ds3002/images/gitpod-course-repo.gif)](https://handlers.uvasomrc.io/gitpod/)
 
 ## Updating your fork
 
