@@ -7,7 +7,8 @@ Welcome to DS3002 Data Science Systems!
 This repository manages your working environment during this course. Some course material
 and tools will be distributed in this way so that we all have a common set of tools, scripts, and datasets.
 
-This requires that you clone and stay current with the **course code respository** and run the course
+This requires that you clone and stay current with the **course code respository** and have the appropriate
+tools to complete exercises. The recommended method for using these tools is to run the course
 **Docker container**.
 
 ![Code and Container](https://nmagee.github.io/ds3002/images/code-and-container.png) 
