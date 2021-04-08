@@ -16,12 +16,12 @@ This requires that you clone and stay current with the **course code respository
 
 You have FOUR choices for setting up an environment for this course:
 
-1. **Old School** - clone the repository for code/samples/data files, but install packages yourself. Detailed lists of packages and software are below.
-2. **DevOps Hardcore** - clone the repository, pull the Docker image, and run them together by mapping the repo to the container when you run it. Instructions [here](#running-as-a-docker-container).
-3. **Cool Kids** - use VS Code, and run the course container in the terminal. Instructions [here](https://www.youtube.com/watch?v=cRmChRzq6VE).
+1. **Old School** - clone the repository for code/samples/data files, but skip the container and install packages yourself. Detailed lists of packages and software are below.
+2. **DevOps Hardcore** - clone the repository, pull the Docker image, and run them together by mapping the repo to the container when you run it. Instructions [here](#run-the-docker-container).
+3. **Cool Kids** - use VS Code, and run the course container in the built-in terminal. Instructions [here](https://www.youtube.com/watch?v=cRmChRzq6VE).
 4. **100% Webby** - use Gitpod for a complete web-based experience. Requires no software other than a browser. Instructions [here](#gitpod).
 
-### Running as a Docker container
+### Run the Docker container
 
 1. [Install Docker](https://docs.docker.com/get-docker/)
 2. Run this Container. A basic Docker command to bring up the course container is below.

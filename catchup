@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# git pull origin main
 state=`git remote -v | grep upstream | wc -l`
 if [ "$state" -lt 1 ]
 then
