@@ -5,7 +5,6 @@ import prettyprint as pprint
 import os
 
 mongopass = os.getenv('MONGOPASS')
-# uri = "mongodb+srv://mongo:Superman44@cluster0.pguxs.mongodb.net/sample_restaurants"
 uri = "mongodb+srv://cluster0.pguxs.mongodb.net/sample_restaurants"
 client = MongoClient(uri, username='mongo', password=mongopass, connectTimeoutMS=200, retryWrites=True)
 
