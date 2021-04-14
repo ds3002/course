@@ -9,14 +9,14 @@ uri = "mongodb+srv://cluster0.pguxs.mongodb.net/sample_restaurants"
 client = MongoClient(uri, username='mongo', password=mongopass, connectTimeoutMS=200, retryWrites=True)
 
 stats = client.stats
-# print(stats)
+print(stats)
 
-# dbs = client.list_database_names()
-# print(dbs)
+dbs = client.list_database_names()
+print(dbs)
 
 thisdb = client.sample_restaurants
-# colls = thisdb.list_collection_names()
-# print(colls)
+colls = thisdb.list_collection_names()
+print(colls)
 
 restaurants = thisdb.restaurants
 count = restaurants.count_documents({})
