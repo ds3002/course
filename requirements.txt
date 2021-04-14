@@ -8,3 +8,6 @@ pydantic
 typing
 mysqlclient
 pipenv
+pymongo
+prettyprint
+dnspython
