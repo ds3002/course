@@ -10,6 +10,5 @@ mysqlclient
 pipenv
 prettyprint
 dnspython
-bson==0.5.7
 pymongo==3.7.2
 chalice

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from pymongo import MongoClient, errors
-import prettyprint as pprint
 import os
 
 mongopass = os.getenv('MONGOPASS')
