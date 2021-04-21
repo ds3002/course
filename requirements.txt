@@ -8,8 +8,8 @@ pydantic
 typing
 mysqlclient
 pipenv
-pymongo
 prettyprint
 dnspython
-bson
+bson==0.5.7
+pymongo==3.7.2
 chalice
