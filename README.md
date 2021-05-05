@@ -147,6 +147,9 @@ Using `pip install`:
 - typing
 - mysqlclient
 - pipenv
+- pymongo
+- dnspython
+
 
 # Gitpod
 
