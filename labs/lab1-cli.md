@@ -157,6 +157,7 @@ You can always move a file to a completely different location by using a full pa
 
 ```
 mv hello.txt /another/directory/hello.txt
+```
 
 4. Pipe one command into another using the `|` character.
 
