@@ -101,7 +101,7 @@ cat .bashrc
 
 But every file or folder can be referred to by its full path within the file structure.
 For example, my home directory in the Google Shell is `/home/nmagee`, so I can also cat
-things using their full path:
+things using their "full path":
 
 ```
 cat /home/nmagee/.bashrc
@@ -110,4 +110,83 @@ cat /home/nmagee/file1
 
 This is extremely useful since it means *you do not have to change into a directory just to
 work with its contents*.
+
+## Working with Text Files
+
+1. A simple, built-in text editor is called `nano`. To open `nano` with an empty, blank document
+simply invoke the `nano` program:
+
+```
+nano
+```
+
+Within the page you see blank space where you will write contents, and a series of possible
+commands at the bottom marked with the `^` character. This stands for the CONTROL key. If you
+open a blank document, try writing several lines of text, complete with paragraph breaks and 
+punctuation. When you're done, press `^X` to exit. Upper/lower case does not matter.
+
+This will give you the following prompt:
+
+```
+Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ? 
+```
+
+To save your buffer (your open document) just press the `Y` key. This will give you a final prompt:
+
+```
+File Name to write : 
+```
+
+Here you can name your file anything you want. It will be saved to the directory you were in
+when you opened up `nano`.
+
+2. `cat` out the contents of the file you just edited.
+
+3. Now rename the file you just created by using the `mv` command. The syntax is:
+
+```
+mv <ORIGINAL-NAME> <NEW-NAME>
+```
+
+So if I just created `hello.txt` in `nano` earlier, I could rename it by moving it:
+
+```
+mv hello.txt hello
+```
+You can always move a file to a completely different location by using a full path reference.
+
+```
+mv hello.txt /another/directory/hello.txt
+
+4. Pipe one command into another using the `|` character.
+
+Above you saw how a `cat` command could be redirected into a file. There is also the `|` "pipe"
+command when you want to couple the text output of one command and process it using a second (or more)
+command. 
+
+Since you know `cat` prints out the contents of a file, let's join it with the `wc` (word count)
+command:
+
+```
+cat hello | wc
+```
+
+This should print out three numbers:
+
+```
+  171   812   4522
+```
+This means the file is 171 lines long, contains 812 words, and 4522 characters long.
+
+You can always request one of these values at a time by using option flags with the `wc` command. If you would like a line count only, use `-l`:
+
+```
+cat hello | wc -l
+```
+For a word count only, use `-w`
+
+```
+cat hello | wc -w
+```
+
 
