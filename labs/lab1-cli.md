@@ -1,7 +1,7 @@
 # Lab 1: The Command Line
 
 Follow all the steps below for practice with the command line. At the bottom are instructions for commands you should write for each prompt, saved to a text file you create using the command line. Upload that file to the Lab assignment page for grading.
-You can use the [**Google Shell**](https://cloud.google.com/shell) for these exercises. Open that page and click on "Go To Console".
+You can use the <a href="https://cloud.google.com/shell" target="_new"><b>Google Shell</b></a> for these exercises. Open that page and click on "Go To Console".
 
 ## Getting Oriented to your Home Directory
 
@@ -172,12 +172,12 @@ command:
 cat hello | wc
 ```
 
-This should print out three numbers:
+This will print out three numbers:
 
 ```
   171   812   4522
 ```
-This means the file is 171 lines long, contains 812 words, and 4522 characters long.
+This means the file is 171 lines long, contains 812 words, and is 4522 characters long.
 
 You can always request one of these values at a time by using option flags with the `wc` command. If you would like a line count only, use `-l`:
 
@@ -190,4 +190,4 @@ For a word count only, use `-w`
 cat hello | wc -w
 ```
 
-
+5. Another example of piping is 
