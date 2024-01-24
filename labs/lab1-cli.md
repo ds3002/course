@@ -431,3 +431,23 @@ be changed in your `.bashrc` file.
 
 When viewing your history, notice the line number with each command. To repeat an item
 in your history, prefix that number with `!`.
+
+## Your Turn
+
+Complete the following steps on your own. Save the commands necessary to complete these
+steps in a single text file. This should contain 7 lines of commands. Copy and paste those lines
+to the Lab 1 assignment in Canvas.
+
+1. Using terminal and/or git-bash on your local computer, change directories to your home directory. 
+
+2. Create a "development" subdirectory within your home directory.
+
+3. Touch a file within that directory named "README.md".
+
+4. Echo the name "DS2002" and redirect it into that file.
+
+5. Touch another file within that directory named "bash_history".
+
+6. Use the redirect character to pass your bash history into that file.
+
+7. Either tar or zip the "development" subdirectory with both files inside of it.
