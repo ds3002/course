@@ -261,8 +261,167 @@ Notice it is a good practice to leave the trailing `/` off of directory names.
 One of the simplest search tools is called `grep` which prints out results based on
 "regular expressions" - these are filters, in a way, to help you find things.
 
-Let's fetch a large text from a remote source so that we can search through it:
+1. Let's fetch a large text from a remote source so that we can search through it:
 
 ```
 curl https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt > mobydick.txt
 ```
+You should now have a local file named `mobydick.txt`. Let's search through it using
+`grep`, which we will pipe after a `cat` command. `cat` will echo out the text contents into
+`grep` which will filter and print ONLY lines where the search term appears.
+
+```
+cat mobydick.txt | grep "Captain"
+```
+
+2. This prints out a lot of results. What if we wanted to count how many lines the word
+"Captain" appears? We can pipe on another command to count lines, like this:
+
+```
+cat mobydick.txt | grep "Captain" | wc -l
+```
+
+How many lines contain "Captain" in this text?
+
+3. What if we wanted to search across many files for a word? `grep` is still useful here.
+Issue this command from within your home directory:
+
+```
+grep -r "Captain"
+```
+
+The output will contain both the file name where the search term appears and the relevant
+line itself
+
+```
+./mobydick.txt:person, yet for Captain Ahab to have a boat actually 
+./mobydick.txt:above all, for Captain Ahab to be supplied with five extra 
+./mobydick.txt:about to be narrated, never reached the ears of Captain 
+./mobydick.txt:handspikes, my hearties. Captain, by God, look to 
+./mobydick.txt:Captain Colnett, a post-captain in the English navy, 
+```
+
+4. Finding files by file name. Use the `find` command for this. The syntax is:
+
+```
+find . -name "mobydick.txt"
+```
+
+This issues the find command, searching the present directory (signified by the `.`)
+with the name `"mobydick.txt"`. Note that the filename must be an exact match.
+
+To search across all home directories, for example, you would change the path option
+
+```
+find /home -name "filename.txt"
+```
+
+5. Finding files matching a pattern
+
+Use the wildcard `*` character at the beginning, middle, or end of a term to extend
+matching. For example, if you only knew that `moby` was in the name of the file and
+nothing more, this command would work:
+
+```
+find . -name '*moby*'
+```
+
+Or if you wanted to file all text files by suffix in a directory
+
+```
+find . -name '*.txt'
+```
+
+6. Wildcard matching
+
+The wildcard `*` is useful in many contexts:
+
+List all files ending with `.pdf`
+
+```
+ls -al *.pdf
+```
+
+Delete all files containing "zero" in the name:
+
+```
+rm -R '*zero*'
+```
+
+## Utility Commands
+
+These commands are used a bit less frequently but can help with basic tasks.
+
+```
+top
+```
+
+`top` or `htop` shows you current processes, memory and CPU usage. They allow you
+to see the `pid` (process ID) for any process, so that you can monitor it or stop (kill) it.
+
+```
+w
+```
+
+`w` (who) shows you current users of your system. Typically if you are on a laptop
+or desktop computer you own, you will be the only user. But large HPC computers may
+have hundreds of users logged in concurrently.
+
+```
+which <PROGRAM>
+```
+
+`which` shows you the path to a specific application. For instance, let's find Python3
+on the local system:
+
+```
+$ which python3
+/usr/bin/python3
+```
+
+The binary code for Python3 lives within `/usr/bin` - a very normal place for it to be.
+
+You may want to list the contents of the `/usr/bin` directory to get a sense for all the 
+built-in commands within the Linux kernel and `bash` shell.
+
+```
+ls -al /usr/bin
+```
+
+Finally, compressing or decompressing archives like zips or tarballs is not too difficult:
+
+To create a zip bundle, assuming we are in a directory with `file1` and `file2` we want to zip up:
+
+
+```
+zip archive.zip file1 file2
+```
+
+This creates a zip file named `archive.zip` containing the two files. To unzip, the command is
+quite simple:
+
+```
+unzip archive.zip
+```
+
+To create a tarball (the common nickname for a tar compressed archive) we often use it in conjunction
+with the `gzip` and `gunzip` options to keep the archive as small as possible. Again assuming we have two files in the current directory named `file1` and `file2` we want to put in the bundle:
+
+```
+tar -czvf archive.tar.gz file1 file2
+```
+
+The `-czvf` options mean: `-c` for CREATE an archive, `-z` for `gzip` the archive,
+`-v` for verbose output, and `-f` for write the archive to a file.
+
+To decompress the same archive:
+
+```
+tar -xzvf archive.tar.gz
+```
+
+The only difference in options is the use of `-x` which means "expand"
+
+NOTE: It's extremely useful to know that in the world of the command line you can always
+add or remove files from archives without re-creating them! They are editable objects
+using when using either the `zip` or `tar` commands.
