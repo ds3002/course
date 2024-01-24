@@ -241,4 +241,28 @@ For a word count only, use `-w`
 cat hello | wc -w
 ```
 
-5. Another example of piping is 
+5. Copying files or directories. If you have a file or folder you would like to copy, use the `cp`
+command like this:
+
+For a file:
+```
+cp file1 file2
+```
+
+For a directory:
+```
+cp -R dir1 dir2
+```
+
+Notice it is a good practice to leave the trailing `/` off of directory names.
+
+## Finding Things
+
+One of the simplest search tools is called `grep` which prints out results based on
+"regular expressions" - these are filters, in a way, to help you find things.
+
+Let's fetch a large text from a remote source so that we can search through it:
+
+```
+curl https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt
+```
