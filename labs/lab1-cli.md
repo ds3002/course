@@ -352,24 +352,18 @@ rm -R '*zero*'
 
 These commands are used a bit less frequently but can help with basic tasks.
 
-```
-top
-```
+### `top`
 
 `top` or `htop` shows you current processes, memory and CPU usage. They allow you
 to see the `pid` (process ID) for any process, so that you can monitor it or stop (kill) it.
 
-```
-w
-```
+### `w`
 
 `w` (who) shows you current users of your system. Typically if you are on a laptop
 or desktop computer you own, you will be the only user. But large HPC computers may
 have hundreds of users logged in concurrently.
 
-```
-which <PROGRAM>
-```
+### `which`
 
 `which` shows you the path to a specific application. For instance, let's find Python3
 on the local system:
@@ -387,6 +381,8 @@ built-in commands within the Linux kernel and `bash` shell.
 ```
 ls -al /usr/bin
 ```
+
+### `zip` and `tar`
 
 Finally, compressing or decompressing archives like zips or tarballs is not too difficult:
 
@@ -425,3 +421,4 @@ The only difference in options is the use of `-x` which means "expand"
 NOTE: It's extremely useful to know that in the world of the command line you can always
 add or remove files from archives without re-creating them! They are editable objects
 using when using either the `zip` or `tar` commands.
+
