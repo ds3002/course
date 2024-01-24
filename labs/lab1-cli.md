@@ -117,7 +117,7 @@ Try changing to the "parent" directory with the `cd` command and the parent dire
 
 ```
 cd ..
-``
+```
 
 From your home directory you are now in the `/home` directory. Verify that by issuing the `pwd` command.
 
