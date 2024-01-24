@@ -264,5 +264,5 @@ One of the simplest search tools is called `grep` which prints out results based
 Let's fetch a large text from a remote source so that we can search through it:
 
 ```
-curl https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt
+curl https://gist.githubusercontent.com/StevenClontz/4445774/raw/1722a289b665d940495645a5eaaad4da8e3ad4c7/mobydick.txt > mobydick.txt
 ```
