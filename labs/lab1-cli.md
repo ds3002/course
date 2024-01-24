@@ -384,7 +384,7 @@ ls -al /usr/bin
 
 ### `zip` and `tar`
 
-Finally, compressing or decompressing archives like zips or tarballs is not too difficult:
+Compressing or decompressing archives like zips or tarballs is not too difficult:
 
 To create a zip bundle, assuming we are in a directory with `file1` and `file2` we want to zip up:
 
@@ -422,3 +422,12 @@ NOTE: It's extremely useful to know that in the world of the command line you ca
 add or remove files from archives without re-creating them! They are editable objects
 using when using either the `zip` or `tar` commands.
 
+### `history`
+
+Displays your history of commands in `bash`. Often this is limited to 1000 but that can
+be changed in your `.bashrc` file.
+
+### `!999`
+
+When viewing your history, notice the line number with each command. To repeat an item
+in your history, prefix that number with `!`.
