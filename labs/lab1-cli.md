@@ -100,16 +100,67 @@ cat .bashrc
 ```
 
 But every file or folder can be referred to by its full path within the file structure.
-For example, my home directory in the Google Shell is `/home/nmagee`, so I can also cat
+For example, your home directory in the Google Shell might look like `/home/mst3k`, so you can also cat
 things using their "full path":
 
 ```
-cat /home/nmagee/.bashrc
-cat /home/nmagee/file1
+cat /home/mst3k/.bashrc
+cat /home/mst3k/file1
 ```
 
 This is extremely useful since it means *you do not have to change into a directory just to
 work with its contents*.
+
+9. Move Up and Down Directories
+
+Try changing to the "parent" directory with the `cd` command and the parent directory shortcut `..`:
+
+```
+cd ..
+``
+
+From your home directory you are now in the `/home` directory. Verify that by issuing the `pwd` command.
+
+You can change back to your home directory in at least three ways. Assuming the home directory is
+named `mst3k` and you are in `/home` then:
+
+```
+cd mst3k
+cd /home/mst3k
+cd ~
+```
+
+## Working with Folders (Directories)
+
+1. Create a subdirectory
+
+From within your home directory create a new directory using the `mkdir` (make directory) command:
+
+```
+mkdir mynewdir
+```
+
+List the contents of your home directory and you should see the new subdirectory appear:
+
+```
+ls -al
+```
+
+2. Can you already guess the full path of the new subdirectory you created? If not, `cd` into
+it and then issue the `pwd` command to find out.
+
+3. What if you want to rename a directory? Use the `mv` command:
+
+```
+mv mynewdir another-newdir
+```
+
+4. To delete a directory, use the `rm` command with the `-R` (Recursive) option. Recursive
+means you want to delete the directory AND anything within it.
+
+```
+rm -R another-newdir
+```
 
 ## Working with Text Files
 
