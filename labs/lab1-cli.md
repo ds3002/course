@@ -416,8 +416,12 @@ ls -al /usr/bin
 
 ### `zip` and `tar`
 
+- - -
+
 **NOTE**: Windows users with `gib-bash` have `unzip` available but not `zip`. I suggest you work
 with `tar` instead.
+
+- - -
 
 Compressing or decompressing archives like zips or tarballs is not too difficult:
 
