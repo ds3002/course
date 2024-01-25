@@ -348,6 +348,38 @@ Delete all files containing "zero" in the name:
 rm -R '*zero*'
 ```
 
+## File Permissions
+
+1. Touch a file named `permissiontest` and echo some content into it. 
+
+2. Next use `ls -al` to see it listed in your directory.
+
+3. Now change its permissions to `000` like this:
+
+```
+chmod 000
+```
+
+Try to `cat` the contents of the file. You should get a permission denied message.
+
+4. Now change its permissions so that only you can read and write the file:
+
+```
+chmod 600
+```
+
+Again, `ls` the directory so you can see the permission bits for the file.
+
+5. Finally, let's grant other members of your group read access, along with the access
+we already gave you:
+
+```
+chmod 640
+```
+
+List the directory contents once more and notice the permission bits for the file.
+
+
 ## Utility Commands
 
 These commands are used a bit less frequently but can help with basic tasks.
