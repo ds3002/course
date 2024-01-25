@@ -474,7 +474,7 @@ in your history, prefix that number with `!`.
 ## Your Turn
 
 Complete the following steps on your own. Save the commands necessary to complete these
-steps in a single text file. This should contain 7 lines of commands. Copy and paste those lines
+steps in a single text file. This should contain 7 lines of commands (along with these 7 prompts). Copy and paste those lines
 to the Lab 1 assignment in Canvas.
 
 1. Using terminal and/or git-bash on your local computer, change directories to your home directory. 
