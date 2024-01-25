@@ -416,6 +416,8 @@ ls -al /usr/bin
 
 ### `zip` and `tar`
 
+**Note**: Windows users with `gib-bash` have `unzip` available but not `zip`. 
+
 Compressing or decompressing archives like zips or tarballs is not too difficult:
 
 To create a zip bundle, assuming we are in a directory with `file1` and `file2` we want to zip up:
