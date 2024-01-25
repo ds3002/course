@@ -418,7 +418,7 @@ ls -al /usr/bin
 
 - - -
 
-**NOTE**: Windows users with `gib-bash` have `unzip` available but not `zip`. I suggest you work
+**NOTE**: Windows users with `git-bash` have `unzip` available but not `zip`. I suggest you work
 with `tar` instead.
 
 - - -
