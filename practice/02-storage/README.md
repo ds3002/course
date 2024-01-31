@@ -1,7 +1,7 @@
 # Storage and Transfer
 
 Amazon S3 will be the primary storage service for this course. Below are instructions
-for setting up your CLI tools, authenticating, and then basic steps for uploading,
+for setting up your CLI tools, authenticating, and the steps for uploading,
 downloading, listing, or sharing objects within S3.
 
 ## AWS CLI Setup
